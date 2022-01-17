@@ -10,6 +10,7 @@
   "author": "minuka",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^13.0.1",
     "express": "^4.17.2",
     "mysql2": "^2.3.3"
