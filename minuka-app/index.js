@@ -6,10 +6,13 @@ const bodyParser = require('body-parser');
 
 const express = require('express')
 const services = require('./services');
+var cors = require('cors')
 const app = express()
+
 const NODE_DOCKER_PORT = env.NODE_DOCKER_PORT;
 
 app.use(bodyParser.json()); 
+app.use(cors())
 
 
 app.get('/', (req, res) => res.send(`Server is Healthy on Port: ${NODE_DOCKER_PORT}`));
